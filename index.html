@@ -30,7 +30,7 @@
 
     <!-- Nav Bar -->
 
-    <div class="title-padding container-fluid">
+    <div class="coloured-section title-padding container-fluid">
 
       <nav class="navbar navbar-expand-sm navbar-dark">
         <a class="navbar-brand" id="logo" href="#">tindog</a>
@@ -58,14 +58,14 @@
 
       <div class="row">
         <div class="col-md-6">
-          <h1 id="header">Meet new and interesting dogs nearby.</h1>
+          <h1 class="big-header">Meet new and interesting dogs nearby.</h1>
 
           <div class="py-5">
             <button type="button" class="btn btn-dark btn-lg"><span class="fab fa-apple"></span> Download</button>
             <button type="button" class="btn btn-outline-light btn-lg"><span class="fab fa-google-play"></span> Download</button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 title-image-container">
           <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
       </div>
@@ -77,7 +77,7 @@
 
   <!-- Features -->
 
-  <section id="features">
+  <section class="white-section container-fluid" id="features">
 
     <div class="row">
       <div class="col-lg-4 feature-content">
@@ -104,17 +104,17 @@
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="coloured-section" id="testimonials">
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item container-fluid active">
           <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
           <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item container-fluid">
           <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
           <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
           <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
@@ -150,55 +150,84 @@
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+    <div class="row">
+      <div class="pricing-container col-lg-4 col-md-6">
+        <div class="card"> <!-- style="width: 18rem;"> -->
+          <div class="card-header">
+            <h3 class="plan-name">Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="plan-price">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-outline-dark pricing-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <div class="pricing-container col-lg-4 col-md-6">
+        <div class="card"> <!-- style="width: 18rem;"> -->
+          <div class="card-header">
+            <h3 class="plan-name">Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="plan-price">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-dark pricing-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
 
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
+      <div class="pricing-container col-lg-4">
+        <div class="card"> <!-- style="width: 18rem;"> -->
+          <div class="card-header">
+            <h3 class="plan-name">Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="plan-price">$99 / mo</h2>
+            <p>Priority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-dark pricing-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
   <!-- Call to Action -->
 
-  <section id="cta">
+  <section class="coloured-section container-fluid" id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="big-header">Find the True Love of Your Dog's Life Today.</h3>
+    <div id="cta-button-container">
+      <button class="cta-btn btn btn-dark btn-lg" type="button"><span class="fab fa-apple"></span> Download</button>
+      <button class="cta-btn btn btn-light btn-lg" type="button"><span class="fab fa-google-play"></span> Download</button>
+    </div>
 
   </section>
 
 
   <!-- Footer -->
 
-  <footer id="footer">
+  <footer class="white-section container-fluid" id="footer">
 
-    <p>© Copyright 2018 TinDog</p>
+    <span class="footer-icon fab fa-twitter"></span>
+    <span class="footer-icon fab fa-facebook-f"></span>
+    <span class="footer-icon fab fa-instagram"></span>
+    <span class="footer-icon fas fa-envelope"></span>
+
+    <p class="copyright">© Copyright 2018 TinDog</p>
 
   </footer>
 
